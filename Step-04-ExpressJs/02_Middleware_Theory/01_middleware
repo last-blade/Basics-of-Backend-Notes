@@ -1,0 +1,29 @@
+-->Middleware:- suppose maine ek reuqyest bheji hai facebook ke server par toh fir woh request jo hai server accept karta hai or 
+            fir 'route' (jaise ki facebook.com/profile, toh slash profile jo hai ek route hai) par jaane se pehle beech
+            mein middleware laga hota hai i.e. agar hum chchate hain ki routes par
+            jaane se pehle mera "hello" print hona chahiye or fir route par jaana chahiye and then user ke paas uss
+            request kaa response send hona chahiye.
+             i.e. kisi bhi route ko chalane se pehle agar hum kuch perform karna chahte hain toh woh middleware kehlata hai.
+-->Middleware in Express.js functions as an intermediary between the server (which receives the incoming HTTP requests) and the route handlers.
+
+-->Understanding Middleware Placement:
+a) Server: The server in an Express.js application is set up using the express() function, and it listens for incoming HTTP requests.
+b) Middleware: Middleware functions sit between the server and the route handlers. When a request comes into the server, it passes      through any middleware functions before reaching the route handler that matches the request's path and HTTP method.
+c) Route Handler: This is where the application defines the actual logic to process the request and send a response back to the client.             
+
+-->Example:-
+Ek common use case JavaScript mein express.js framework ke saath hai. Imagine tum ek website bana rahe ho jahan users
+apne profile ko update kar sakte hain. Lekin tum chahte ho ki sirf logged-in users hi apna profile update kar sakein.
+Ab yeh middleware ki madad se aasan ho jaata hai.
+
+Jab user apna profile update karne ki request bhejta hai, woh request sabse pehle middleware ke through jaati hai.
+Yeh middleware check karta hai ki user logged-in hai ya nahi. Agar user logged-in hai toh request aage badhti hai
+aur profile update ho jaata hai. Lekin agar user logged-in nahi hai toh middleware request ko rok deta hai aur
+user ko login karne ke liye kehta hai.
+
+Toh, Middlewares ka basic kaam hai request aur response ke beech mein aane wali cheezon ko control karna, jaise
+authentication, logging, data validation, etc.             
+
+
+
+Conclusion:- Request--> server accepts reuqest--> middleware(optional)--> route handler

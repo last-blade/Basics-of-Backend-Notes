@@ -1,0 +1,18 @@
+1.--> MongoDB is a NOSql Database and it stores data in the form of objects, and sql stores data in the form of tables.
+
+2. --> Backend contains Application Server(NodeJs) and Database(MongoDB).
+
+3. --> Suppose ek Database hai facebook kaa, and uss Database mein users kaa data hai, ads kaa data hai, posts kaa data hai,
+        toh in sabko kehte hain collections i.e. facebook ek Database hai and uss database mein sabhi users kaa data jo hoga
+        woh ek collection kehlayega and advertisements(Ads) kaa bhi data hoga, toh yeh bhi ek collection kehlayega, aise hi 
+        collection i.e. users ke data ke andar bhi ek agar hum individual user ko select karenge toh usko hum document
+        bolenge.
+
+        Conclusion:- Database --> Collection --> Document i.e.,database ke andar collection, and collectionke andar document
+
+4. --> Mongoose.connect se database create hota hai.
+5. --> model create se collection create hota hai.
+5. --> CREATE code se hum document create karte hain. 
+
+6. --> Mongoose humare NodeJs Server and MongoDB Server ko connect karta hai i.e. nodejs se hum databse(mongodb) ko connect
+        kar sakte hain with the help of Mongoose

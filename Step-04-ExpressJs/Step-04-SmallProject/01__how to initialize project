@@ -1,0 +1,11 @@
+1. npm init
+2. npm install express
+3. npm install ejs (ejs is like duplicate of HTML but hum agar kisi tag mein 2+2 (div 2+ 2div)likhenge html mein toh fir
+    yeh add karke nahin dega html, but ejs humein yeh kaam karke dega)
+
+4. Setpu ejs as a view engine(see index.js file "app.set('view engine', 'ejs')")
+5. create a folder name 'views' and in this folder create index.ejs file   
+6. create public folder and in this folder create javascripts folder, stylesheets folder and images folder
+7. in index.js, import this:- "const path = require("path");"
+8.
+in index.js, add this code:- "app.use(express.static(path.join(_dirname, 'public')));"

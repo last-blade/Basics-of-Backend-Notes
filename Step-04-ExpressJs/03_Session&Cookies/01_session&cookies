@@ -1,0 +1,78 @@
+-->Cookies are small pieces of text sent to your browser by a website you visit.
+
+1. --> Agar Cookies exist nahin karte toh kya hota ?, see below:-
+Suppose user ne instagram oepan kiya hai and fir use usmein kisi post ko like karta hai toh fir instagram 'Login' karne ko
+kehta hai since bin login kiye post ko like nahin kar sakte hain, toh use login karta hai or like kar deta hai post ko,
+fir use kisi or photo ko like karta but instagram firse login karne ko bolta, and fir use photo like karta, ab use ko koi
+photo post akrni hai instagram apr toh fir user firse login karta or fir post kar paata, matlab ki koi bhi main action
+or activity kar raha hoon toh fir instagram login karne ko bol raha hai mujhse, but yeh toh bada hi frutratiing ho 
+jaayegi user ke liye, kyoki baar baar login karna pad raha hai insragram ko, toh yahi par role aata hai 'Cookies' kaa 
+toh jaise ki humein baar baar instagram kp batana pad raha tha ki main yeh XYZ hoon or tabhi kuch karne de raha tha 
+activity, toh ab cookies kya karegi ki main bas ek baar login karunga instagram ko or fir server mujhe ek koi 'KEY' 
+bhej dega jo ki user ke paas hogi but hide hogi woh key, toh jab main koi activity yaa ction lunga instagram par toh 
+fir uss action(request) ke saath mein meri woh unique key bhi server par jaayegi or wahi same unique key server par bhi 
+stored hogi meri i.e. meri instagra i'd se maped hogi woh unique key, or jab woh key jaayegi meri request ke saath mein toh 
+fir server jo hai meri key se apni key ko match karega or match hone ke baad woh reuqest fulfill ho jaayegi yaa fir response 
+aa jaayega mere frontend par.
+
+
+
+2. --> Example:-
+        Sabse pehle shusruat mein toh instagram login hi maangega, fir uske baadmein main agar kisi ki photo ko like karunga toh fir
+        server par request jaayegi or meri unique key bhi jaayegi server par or woh key match krega server apni unique key se, or
+        match hone ke baad server response bhej dega ki bhai post like kardi hai jo aapne request bheji thi post like karne ki
+        or woh like ho gayi hai photo, woh mere frontend par show ho jaayegi, i.e. main koi si bhi request bhejunga server par
+        , toh uss reuqest ke saath mein meri unique key bhi jaayegi server par, or ab user ko baar baar login karne ke neeed nahin
+        hai, woh 'key' hi meri cookie hai yahan par.
+
+3. --> Session:-  
+      Or jo server and user ke beech mein jo connection bana hua hai cookie ke through issi ko hum 'session' kehte hain.
+
+
+4. --> Logout kaise hota hai:-
+        Agar cookie(key) jo hai humare browser par saved, woh cookie agar hatt jaaye humare browser par se toh fir user
+        Logout ho jaayega, i.e. main koi request bhejunga server ko and woh cookie(key) jo hai mere browser par se hatt chuki hai
+        toh fir meri request ke saath mein woh 'cookie(key)' toh jaayegi hi nahin, agar bas reuqest jaayegi or request ke
+        saath mein cookie nahin jaayegi toh fir server firse poochhega ki bhai aap kaun ho, main nahin jaanta aapko, 
+        toh fir mujhe iske liye login karna padega or tab jaake meri request fulfill hogi.
+        
+        Conclusion: Agar woh 'cookie' mere browser se hatt jaaye yaa fir change ho jaaye yaa fir server ki side se change ho jaaye woh
+                    cookie, toh tab bhi logout ho jaay user, or jaise ki hum dekhte hain government website par session-timeout
+                    show karta hai, toh woh issi cookie ki wajah se hota hai, woh cookie kuch time baad expire ho jaati hai 
+                    government websites par, or jab user koi reuqest bhejta hai toh fir woh cookie jo hai server par jaati hi
+                    nahin hai kyoki woh cookie ab delete ho chuki hai browser se and bas request hi jaati hai server par, and
+                    fir server bolta hai ki main aapko nahin pehchanta, or session-timeout likha hua aa jaata hai
+
+
+
+5. --> Extra information about cookies:-
+        Session timeouts on websites can be due to a variety of reasons, and while cookies play a role, they are not the sole factor. Here’s a breakdown:
+
+        a).Cookies Expiration:
+
+            i). Cookies are often used to store session information, such as login status or preferences. When these cookies
+                expire, the session might end, requiring you to log in again. The expiration time of cookies is set by the 
+                website, and it can vary from a few minutes to several days or even longer.
+        b). Server-Side Session Expiration:
+
+            i). Many websites manage sessions on the server side, where session data is stored in a database or memory.
+                These sessions have a predefined expiration time. Once this time is reached, the session is terminated 
+                regardless of the status of the cookies.
+
+        c).Inactivity:
+
+            i). Some websites have a timeout mechanism that ends a session after a period of inactivity. This is often 
+                implemented for security reasons, particularly on sites that handle sensitive information.
+        
+        d).Security Policies:
+
+            i). Websites may also implement session timeouts based on security policies, such as forcing users to
+                re-authenticate after a certain period to protect against unauthorized access.
+        
+        e).Network or Browser Issues:
+
+            i). Sometimes, issues with your internet connection or browser settings can cause a session to time out prematurely.
+
+            
+            In summary, while cookie expiration can contribute to session timeouts, they are usually just one part of the 
+            overall session management strategy employed by websites.                    

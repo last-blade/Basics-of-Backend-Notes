@@ -1,0 +1,6 @@
+1. --> Authentication and authorization ke liye humein sabse pehle kuch cheezein seekhni hai, see below:-
+    a) Cookies kaise set karte hain
+    b) Bcrypt kaise  use karte hain for password encryption and deecryption
+    c) jwt kya hai and jwt mein data kaise store kare or bahar kaise nikale
+
+2. --> install this package first--> npm i jsonwebtoken bcrypt

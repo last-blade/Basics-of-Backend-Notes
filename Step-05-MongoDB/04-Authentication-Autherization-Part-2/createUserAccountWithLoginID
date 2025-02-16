@@ -1,0 +1,11 @@
+--> Create user account:- 
+step.1 -> setup mongoose
+step.2 -> setup schema
+step.3 -> setup model
+step.4 -> usercreate
+step.5 -> encrypt(hash) password
+step.6 -> create jwt token
+step.7 -> set the token as a cookie on the browser
+
+--> jab user login karega toh fir token receive hoga server side par and then uss token ko decrypt karenge toh fir email-id milegi
+    or uss email-id ko match karenge toh fir true aayega toh login hoga else nahin hoga

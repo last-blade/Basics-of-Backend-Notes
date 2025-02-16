@@ -1,0 +1,15 @@
+{
+  "name": "step-06-handson-practice",
+  "version": "1.0.0",
+  "description": "Ismein humne jo peechhe concepts seekhe hain abhi tak, woh sab hum iss step mein practice karenge unn sab concepts ki jo humne abhi tak seekha hai",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "iamsrpk",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
