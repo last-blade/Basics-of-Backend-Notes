@@ -27,9 +27,3 @@ A comprehensive project that incorporates all concepts learned throughout the re
 
 ### Step-08-Cors-Proxy
 Learn how to set up and use a CORS proxy for handling cross-origin resource sharing issues in Node.js.
-
-## Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/nodejs.git
